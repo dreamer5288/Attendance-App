@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    tools:context=".TotalAttendance">
+
+        <TextView
+            android:id="@+id/facultyName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Teacher Name"/>
+
+        <TextView
+            android:layout_below="@id/facultyName_tv"
+            android:id="@+id/subjectDate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="subject | date"/>
+        <TextView
+            android:id="@+id/info_tv"
+            android:layout_marginTop="6sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/subjectDate_tv"
+            android:textSize="13sp"
+            android:textAllCaps="true"
+            android:text="Tap on any student name to see statistics"/>
+
+
+        <ListView
+            android:layout_below="@id/info_tv"
+            android:id="@+id/listview"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+
+        </ListView>
+
+    </RelativeLayout>

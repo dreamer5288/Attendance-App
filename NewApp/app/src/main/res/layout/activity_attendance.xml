@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/viewFaculty_btn"
+            android:layout_width="200dp"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_style"
+            android:text=" View Faculty " />
+        <TextView
+            android:id="@+id/info_for_take_attendance"
+            android:layout_below="@id/viewFaculty_btn"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=" tap on faculty to take attendance "
+            android:textAllCaps="true"/>
+
+        <ListView
+            android:layout_below="@id/info_for_take_attendance"
+            android:id="@+id/lv_attendance"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+    </RelativeLayout>

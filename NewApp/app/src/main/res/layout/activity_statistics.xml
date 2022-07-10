@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".StatisticsActivity">
+
+
+    <TextView
+        android:id="@+id/report_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance Report"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal"
+        android:layout_marginTop="50dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/name_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report_page"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/studName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/studName_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Student"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fatherName_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_ll"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/stFatherName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Father Name: "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/stFatherName_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Father"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sub_name_ll"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fatherName_ll"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/subName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="Subject: "/>
+        <TextView
+            android:id="@+id/subName_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="Subject1"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gender_ll"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub_name_ll"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/genderName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="Gender: "/>
+        <TextView
+            android:id="@+id/genderName_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="M"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contact_ll"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender_ll"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/studContact_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="Contact: "/>
+        <TextView
+            android:id="@+id/studContact_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="8690360027"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/present_ll"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_ll"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/presentCount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="No. of Present: "/>
+        <TextView
+            android:id="@+id/presentCount_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="1"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/absent_ll"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/present_ll"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/absentCount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="No. of Absent: "/>
+        <TextView
+            android:id="@+id/absentCount_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="0"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/percent_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/absent_ll"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal"
+            android:text="Percentage Attendance "/>
+
+        <TextView
+            android:id="@+id/percent_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/percent_tv"
+            android:layout_centerHorizontal="true"
+            android:textSize="34sp"
+            android:text="100 %"
+            android:textStyle="bold"
+            android:textColor="#0C0C0C"/>
+
+</RelativeLayout>

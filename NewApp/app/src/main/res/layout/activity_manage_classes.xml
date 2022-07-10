@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/manageClassPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Manage Classes"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_marginTop="25sp"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/viewClassbtn"
+            android:layout_below="@id/manageClassPage"
+            android:layout_width="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:layout_centerHorizontal="true"
+            android:text=" View class " />
+
+        <TextView
+            android:id="@+id/info_for_add_student"
+            android:layout_below="@id/viewClassbtn"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="tap on class  to add student"
+            android:textAllCaps="true"/>
+
+        <ListView
+            android:layout_below="@id/info_for_add_student"
+            android:id="@+id/lv_class"
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addClassbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#E57373"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_add_circle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
